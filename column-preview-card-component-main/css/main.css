@@ -1,0 +1,120 @@
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 15em;
+  width: 70em;
+  height: 40em;
+  justify-content: center;
+}
+
+img {
+  width: 4em;
+  margin-left: 3em;
+  margin-top: 3em;
+}
+
+p,
+h1 {
+  color: white;
+}
+
+h1 {
+  margin-left: 1.5em;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-left: 2.3em;
+  line-height: 1.3em;
+}
+
+.sedans {
+  background-color: #d9721d;
+  border-radius: 1em 0 0 1em;
+}
+
+.suvs {
+  background-color: #0b5860;
+}
+
+.luxury {
+  background-color: #063230;
+  border-radius: 0 1em 1em 0;
+}
+
+button {
+  background-color: white;
+  border: none;
+  border-radius: 2em;
+  height: 2.5em;
+  width: 8em;
+  margin-left: 2em;
+  margin-top: 11em;
+}
+
+.sedans button {
+  color: #c1a080;
+}
+
+button:hover {
+  border: 1px solid white;
+  border-radius: 1em;
+  color: white;
+}
+
+.sedans button:hover {
+  background-color: #d9721d;
+}
+
+.suvs button {
+  color: #194042;
+}
+
+.suvs button:hover {
+  background-color: #10464d;
+  color: white;
+}
+
+.luxury button:hover {
+  background-color: #063230;
+  color: white;
+}
+
+.luxury button {
+  color: #0e201f;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 120vh;
+  }
+
+  .sedans {
+    height: 70em;
+    width: 25em;
+    margin-top: 60em;
+    border-radius: 1em 1em 0 0;
+  }
+  .suvs {
+    height: 70em;
+    width: 25em;
+  }
+  .luxury {
+    height: 70em;
+    width: 25em;
+    border-radius: 0 0 1em 1em;
+  }
+  .wrapper {
+    flex-direction: column;
+    margin-left: 16em;
+  }
+
+  button {
+    margin-bottom: 3em;
+  }
+}
